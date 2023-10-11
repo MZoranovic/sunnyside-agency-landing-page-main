@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@300&family=Inter&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&display=swap');
+
+
+    main{
+        overflow: hidden;
+    }
+
+    .top-content {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    overflow: hidden;
+    }
+
+    .nav-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    }
+
+    .nav-items {
+    display: flex;
+    gap: 40px;
+    align-items: right;
+    }
+
+    .nav-items .about p,
+    .nav-items .services-top p,
+    .nav-items .projects p {
+    color: hsl(0, 0%, 100%);
+    font-family: Barlow;
+    cursor: pointer;
+    }
+
+    .button {
+    background-color: white;
+    width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
+    font-family: Fraunces;
+    cursor: pointer;
+    }
+
+    .button:hover{
+    background-color: hsl(0, 0%, 100%,  0.5);
+    color: hsl(0, 0%, 100%);
+    }
+
+    .middle-content h1 {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-family: Fraunces, serif;
+    max-width: 475px;
+    font-size: 45px;
+    margin-left: 485px;
+    margin-top: 100px;
+    }
+
+    .top-img {
+    text-align: center;
+    padding: 1rem;
+    }
+
+    .transform,
+    .stand-out {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+    .transform .right {
+    background-image: url(./images/desktop/image-transform.jpg);
+    }
+
+    .stand-out .left {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    }
+
+    .transform .left,
+    .stand-out .left {
+    grid-row: 1; 
+    }
+
+    .transform .right,
+    .stand-out .left {
+    height: 505px;
+    }
+
+    .transform .left h1,
+    .stand-out .right h1 {
+    color: hsl(212, 27%, 19%);
+    font-size: 35px;
+    font-weight: 900;
+    font-family: Fraunces, serif;
+    margin-left: 0px;
+    margin-top: 150px;
+    width: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+    }
+
+    .transform .left h2,
+    .stand-out .right h2 {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 350px;
+    padding-left: 100px;
+    font-family: Fraunces, serif;
+    cursor: pointer;
+    text-decoration: underline 3px solid hsl(51, 100%, 49%);
+    }
+
+    .stand-out .right h2 {
+    text-decoration: underline 3px solid hsl(7, 99%, 70%)
+    }
+
+    .transform .left p,
+    .stand-out .right p {
+    color: hsl(210, 4%, 67%);
+    font-size: 18px;
+    font-family: Barlow;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+    .two-images {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+    .two-images .first-img,
+    .two-images .second-img {
+    align-items: end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    height: 600px;
+    padding: 40px 50px; 
+    text-align: center;
+    }
+
+    .two-images .first-img p {
+    color: hsl(167, 40%, 24%);
+    opacity: 0.9;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+    font-family: Fraunces, serif;
+    margin-bottom: 100px;
+    }
+
+    .two-images .second-img p {
+    color: hsl(198, 62%, 26%);
+    opacity: 0.9;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+    font-family: Fraunces, serif;
+    margin-bottom: 100px;
+    }
+
+    .two-images .first-img h3 {
+    color: hsl(167, 40%, 24%);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding-top: 300px;
+    margin-top: 100px;
+    }
+
+    .two-images .second-img h3 {
+    color: hsl(198, 62%, 26%);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    padding-top: 300px;
+    margin-top: 100px;
+    }
+
+    .two-images .first-img {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    }
+
+    .two-images .second-img {
+    background-image: url(./images/desktop/image-photography.jpg);
+    }
+
+    .testimonials {
+    align-items: center;
+    text-align: center;
+    padding: 70px 40px 90px 40px;
+    padding-bottom: 0px;
+    }
+
+    .testimonials h2 {
+    color: hsl(210, 4%, 67%);
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Fraunces', serif; 
+    font-weight: 900;
+    text-transform: uppercase;
+    }
+
+    .testimonial-section {
+    align-items: start;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+    .first-testimonial,
+    .second-testimonial,
+    .third-testimonial {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+    .first-testimonial img,
+    .second-testimonial img,
+    .third-testimonial img {
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    }
+
+    .first-testimonial .feedback p,
+    .second-testimonial .feedback p,
+    .third-testimonial .feedback p {
+    color: hsl(232, 10%, 55%);
+    font-family: Barlow, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+
+    .first-testimonial .name p,
+    .second-testimonial .name p,
+    .third-testimonial .name p {
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    }
+
+    .first-testimonial .job p,
+    .second-testimonial .job p,
+    .third-testimonial .job p {
+    color: hsl(210, 4%, 67%);
+    font-size: 15px;
+    padding-top: 10px;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 130px;
+    }
+
+    .four-images img
+    .four-images img
+    .four-images img
+    .four-images img {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .footer {
+    align-items: center;
+    background-color: hsl(167, 30%, 60%);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    width: 1500px;
+    }
+
+    .logo-footer img {
+    height: 25px;
+    width: 123px;
+    margin-left: 100px;
+    }
+  
+    .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 80px;
+    margin-top: -100px;
+    }
+
+    .services p {
+    color: hsl(168, 34%, 41%);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
+    .services p:hover{
+    color: hsl(0, 0%, 100%);
+    }
+
+    .social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 100px;
+    margin-top: -10px;
+    }
